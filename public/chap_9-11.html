@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ********Chapter 9-11 *****************/
+
+1
+var city=prompt("enter city name: ")
+if (city=="karachi")
+{alert("welcome to city of lights")}
+
+2
+var gender=prompt("enter your gender")
+if(gender=="male"){
+    alert("Good morning Sir")
+}
+if(gender=="female")
+{    alert("Good morning ma'am")}
+
+3
+var color=prompt("enter color");
+if (color=="red"){
+    alert("Must stop")
+}
+else if(color=="yellow"){
+    alert("get ready")
+}
+else if(color=="green"){
+    alert("ready to move")
+}
+
+4
+var fuel=prompt("Enter amount of fuel in liters");
+if (fuel<="0.25"){
+    alert("please refill fuel of your car")
+}
+
+5
+var a = 4; if (++a === 5){ alert("given condition for variable a is true"); }
+var b = 82; if (b++ === 83){ alert("given condition for variable b is true"); }
+var c = 12; if (c++ === 13){ alert("condition 1 is true"); } if (c === 13){ alert("condition 2 is true"); } if (++c < 14){ alert("condition 3 is true"); } if(c === 14){ alert("condition 4 is true"); }
+var materialCost = 20000; var laborCost = 2000; var totalCost = materialCost + laborCost; if (totalCost === laborCost + materialCost){ alert("The cost equals"); }
+if (true){ alert("True"); } 
+if (false){ alert("False"); }
+if("car" < "cat"){ alert("car is smaller than cat"); }
+
+6
+var gr,rem
+var marks=prompt("Enter marks obtained ")
+var total=prompt("Enter total marks ")
+var per=(marks/total)*100
+document.write("Total marks :"+total+"<br>")
+document.write("Obtained marks :"+marks+"<br>")
+document.write("percentage :"+per+"%"+"<br>")
+
+if(per>="80"){
+    gr="A-one"
+    rem="excellent"
+}
+else if(per>="70"){
+    gr="A"
+    rem="Good"
+}
+else if(per>="60"){
+    gr="B"
+    rem="Need improvemnet"
+}
+else if(per<"60"){
+    gr="Fail"
+    rem="Sorry"
+}
+document.write("Grade :"+gr+"<br>")
+document.write("Remarks :"+rem+"<br>")
+
+7
+var num=5;
+var guess=prompt("guess a number")
+if (guess==num){
+    alert("Bingo!")
+}
+else if(guess==num+1){
+    alert("too close")
+}
+
+8
+var num=prompt("enter a number")
+if (num%3==0){
+    alert("yes it is divisible by 3")
+}
+
+9
+var num=prompt("enter a number")
+if (num%2==0){
+    alert("yes it is even")
+}
+else
+    alert(" it is odd")
+
+10
+var temp=prompt("Enter Temperature")
+if (temp>40){
+    alert("It is too hot outside")
+}
+else if (temp>30){
+    alert("The Weather today is Normal")
+}
+else if (temp>20){
+    alert("Today's Weather is cool")
+}
+else if (temp>10){
+    alert("OMG! Today's weather is so Cool")
+}
+
+11
+var num1,num2,opr,result;
+num1=Number(prompt("enter number"))
+num2=Number(prompt("enter number"))
+opr=prompt("enter opr")
+if(opr=="+"){
+    alert("answer is "+num1+num2)
+}
+else if(opr=="/"){
+    alert("answer is "+num1/num2)
+}
+else if(opr=="-"){
+    alert("answer is "+ num1-num2)
+}
+else if(opr=="*"){
+    alert("answer is "+ num1*num2)
+}
+else if(opr=="+%"){
+    alert("answer is "+num1%num2)
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task 1
+        var arr = [[],[]];
+        // task 2
+        var arr1 = [[0,1,2,3],
+                    [1,0,1,2],
+                    [2,1,0,1]]
+        // task 3
+        for ( var i = 1 ; i <= 10 ; i++){
+            document.write(i+"<br>");
+        }
+        // task 4
+        var t_no , tr, trange;
+    t_no = prompt("Enter a number to generate table: ");
+    t_range = prompt("Enter range to generate table: ");
+    for (var i = 1 ; i <= t_range ; i++){
+        tr = t_no * i;
+        document.write(t_no+" x "+i+" = "+tr+"<br>");
+    }
+    // task 5
+    var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+    for (var i = 0 ; i < fruits.length ; i++){
+        document.write("<br>Element at index "+i+" is "+fruits[i]);
+    }
+    // task 6
+    document.write("<br>Counting: <br>")
+    for (var i = 0 ; i <= 15 ; i++){
+        document.write(i+", ");
+    }
+    document.write("<br>Reverse Counting: <br>")
+    for (var i = 10 ; i >= 1 ; i--){
+        document.write(i+", ");
+    }
+    document.write("<br>Even: <br>")
+    for (var i = 0 ; i <= 20 ; i++){
+        if ((i%2)===0){
+        document.write(i+", ");
+        }
+    }
+    document.write("<br>ODD: <br>")
+    for (var i = 0 ; i <= 20 ; i++){
+        if ((i%2)!==0){
+        document.write(i+", ");
+        }
+    }
+    document.write("<br>Series: <br>")
+    for (var i = 0 ; i <= 20 ; i++){
+        if ((i%2)===0){
+        document.write(i+"k, ");
+        }
+    }
+    // task 7
+    var a = ["cake", "apple pie", "cookie", "chips", "patties"]
+    var choice = prompt("What do you want: ");
+    var pr = false;
+    for (var i = 0 ; i <= a.length ; i++){
+        if (choice === a[i]){
+            pr = true;
+            alert("it is available at index "+i+" in our bakery<br>");
+        }
+    }
+    if (pr === false){
+        alert("we are sorry "+choice+" is not available in our bakery<br>.");
+    }
+    // task 8
+    var max;
+    var a = [24,53,78,91,12];
+    for (var i = 0 ; i < (a.length-1) ; i++){
+        if (a[i]>a[i+1]){
+            max = a[i];
+        }
+        else if(a[i]<=a[i+1]){
+            max = a[i+1];
+        }
+    }
+    document.write("<br>"+a+"<br>");
+    document.write("The largest number is: "+max+"<br>");
+    // task 9
+    var min;
+    var a = [24,53,78,91,12];
+    for (var i = 0 ; i < (a.length-1) ; i++){
+        if (a[i]<a[i+1]){
+            min = a[i];
+        }
+        else if(a[i]>=a[i+1]){
+            min = a[i+1];
+        }
+    }
+    document.write("<br>"+a+"<br>");
+    document.write("The smallest number is: "+min+"<br>");
+    // task 10
+    for (var i = 5 ; i <= 100 ; i+=5){
+        document.write(i+"<br>");
+    }
+    </script>
+</body>
+</html>

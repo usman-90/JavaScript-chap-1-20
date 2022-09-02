@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task 1
+        var num1 = prompt("Enter 1st integeer: ");
+        var num2 = prompt("Enter 2nd integeer: ");
+        if (num1 > num2){
+            alert("1st integeer is bigger than second!");
+        }
+        else if (num1 < num2 ){
+            alert("2nd integeer is bigger than 1st");
+        }
+        else {
+            alert("Entered numbers are equal! ");
+        }
+        // task 2
+        var num = prompt("Enter a integeer: ");
+        if (num > 0){
+            alert("It is positive!")
+        }
+        else if (num < 0 ){
+            alert("It is negative!");
+        }
+        else {
+            alert("It is zero!");
+        }
+        // task 3
+        var char = prompt("Enter Any character: ")
+        char.toLowerCase();
+        if (char === "a" || char === "e" ||char === "i" || char === "o" || char === "u"){
+            alert(true)
+        }
+        else{
+            alert(false)
+        }
+        // task 4
+        var pw = prompt("Enter your Password: ");
+        var pass = "1234";
+        if (pw===""){
+            alert("Please Enter your password!");
+        }
+        else if (pw === "1234"){
+            alert("Correct Password! ");
+        }
+        else{
+            alert("Please enter a valid password! ");
+        } 
+        // task 5
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {    
+        greeting = "Good day";}
+        else {
+        greeting = "Good evening";
+        }
+        // task 6
+        var greeting;
+        var hour = prompt("Enter hours: ");
+        if (hour < 1200 && hour >= 0000) {    
+        greeting = "Good Morning";}
+        else if (hour < 1700 && hour >= 1200) {    
+        greeting = "Good Afternoon!";}
+        else  if (hour < 2100 && hour >= 1700) {    
+        greeting = "Good Evening";}
+        else if (hour <= 2359  && hour >= 2100) {    
+        greeting = "Good Night";}
+    </script>
+</body>
+</html>

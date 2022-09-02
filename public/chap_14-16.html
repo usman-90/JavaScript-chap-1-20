@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // task 1-7
+        document.write("<h1>QUALIFICATIONS </h1>");
+       var std_names=[];
+       var str_arr = ["usman", "hamza", "ahmed"];
+       var num_arr = [3,4,5,24,64,1];
+       var bool_arr = [false,false,true,false];
+       var mix_arr = ["usman", 545, false];
+       var q = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+       for (var i = 0 ; i < q.length ; i++){
+        document.write((i+1)+") "+q[i]+"<br>");
+       }
+       // task 8
+       std_names[0] = "usman";
+       std_names[1] = "salman";
+       std_names[2] = "rizman";
+       var std_marks = [320, 230, 480];
+       for (var i = 0 ;  i < std_names.length ; i++ ){
+            document.write("Score of "+std_names[i]+" is "+std_marks[i]+". Percentage: "+(std_marks[i]/500*100)+"%<br>");
+       }
+       // task 9
+    arr=["yellow","black","pink"];
+alert(arr)
+var c1=prompt("Enter any color at beginning")
+arr.unshift(c1)
+alert(arr)
+var c2=prompt("Enter any color at end")
+arr.push(c2)
+alert(arr)
+var c3=prompt("Enter fisrt color ")
+var c4=prompt("Enter second color ")
+arr.unshift(c3,c4)
+alert(arr)
+arr.shift(arr[0])
+alert(arr)
+arr.pop()
+alert(arr)
+
+var p1=prompt("Enter index to add color ")
+var c5=prompt("Enter any color ")
+arr.splice(p1,0,c5)
+alert(arr)
+
+var p2=prompt("Enter index to delete color ")
+var num=prompt("Enter number of colors to be deleted")
+arr.splice(p2,num)
+alert(arr)
+            // task 10
+            var scores = [320,230,480,120]
+            document.write("Scores of students : "+scores+"<br>");
+            scores.sort();
+            document.write("Ordered scores of students : "+scores+"<br>");
+            // task 11
+        var cities = ["karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+        var selectedCities = cities.slice(2,4);
+        document.write("Cities List : "+cities+"<br>");
+        document.write("Selected Cities List : "+selectedCities+"<br>");
+        // task 12
+        var arr = ["This", "is", "my","cat"];
+        document.write("Array: "+arr);
+        var str = arr.join();
+        document.write("String: "+str);
+        // task 13
+        var devices = ["keyboard", "mouse", "printer","monitor"];
+        document.write("Devices: "+devices+"<br>");
+        for (var i = 0 ; i < devices.length ; i++){
+            document.write("<br>Out:<br>"+devices[i]);
+        }
+        // task 14
+        var devices = ["keyboard", "mouse", "printer","monitor"];
+        document.write("Devices: "+devices+"<br>");
+        for (var i = devices.length ; i > 0 ; i--){
+            document.write("<br>Out:<br>"+devices[i-1]);
+        }
+        // task 15
+        var brands = [ "Apple", "Samsung", "Motorola","Nokia","sony","Haier"];
+        document.write("<br><br>");
+        for (var i = 0 ; i < brands.length ; i++){
+            document.write(brands[i]+"<br>");
+        }
+    
+
+    </script>
+</body>
+</html>
